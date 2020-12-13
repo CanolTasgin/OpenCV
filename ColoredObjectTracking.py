@@ -29,10 +29,10 @@ while(1):
     # define range of yellow in HSV
     yellow = np.uint8([[[0,255,255 ]]]) #yellow in BGR
     hsv_yellow = cv.cvtColor(yellow,cv.COLOR_BGR2HSV) #Convert it to HSV and see hsv version
-    print( hsv_yellow ) # 30 255 255
+    #print( hsv_yellow ) # 30 255 255
 
-    lowerLimit = np.array([20,255,255]) #H stands for hue. Possible ranges are like following in OpenCV --> H (0-180) S (0-255) V (0-255) 
-    upperLimit = np.array([40,255,255]) #Change H for defining color range
+    lowerLimit = np.array([15,80,80]) #H stands for hue. Possible ranges are like following in OpenCV --> H (0-180) S (0-255) V (0-255) 
+    upperLimit = np.array([45,255,255]) #Change H for defining color range
 
     # Threshold the HSV image to get only yellow colors
     mask = cv.inRange(hsv, lowerLimit, upperLimit)
