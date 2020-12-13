@@ -1,7 +1,7 @@
 #Used Tutorial at the beginning: https://www.youtube.com/watch?v=88HdqNDQsEk&list=PLQVvvaa0QuDdttJXlLtAJxJetJcqmqlQq&index=16 
 #OpenCV docs: https://docs.opencv.org/4.5.0/db/d28/tutorial_cascade_classifier.html
 
-#In order to use it on Mac/Visual Studio Code, open vscode via Terminal with command 'sudo code' in order to give VSCode Camera permissions
+#In order to use it on Mac/Visual Studio Code, Command+Shift+P --> Choose ">Shell Command: Install 'code' command in PATH" --> open vscode via Terminal with command 'sudo code' in order to give VSCode Camera permissions
 
 import numpy as np
 import cv2
