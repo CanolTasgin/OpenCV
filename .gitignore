@@ -149,4 +149,8 @@ cython_debug/
 .history/
 
 #image
-.png
+*.jpg
+*.gif
+*.png
+*.svg
+*.ico
