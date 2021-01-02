@@ -22,6 +22,12 @@ while(True):
         img_item = "my-image.png"
         cv2.imwrite(img_item, roi_gray) # save my face as png
     	
+        color = (255, 0, 0) # Blue in BGR
+        stroke = 2
+        width = x + w #end coordinate of x
+        height = y + h #end corordinate of y
+        cv2.rectangle(frame, (x,y), (width, height), color, stroke)#draw rectangle on the frame
+
     cv2.imshow('frame',frame)
     if cv2.waitKey(20) & 0xFF == ord('q'): # press q to quit
         break
